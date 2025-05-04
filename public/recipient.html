@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Recipient - Banking App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/send.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="transfer-container">
+    <div class="transfer-header">
+      <button class="back-btn" id="back-btn">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2 class="transfer-title" id="transfer-title">Send $0</h2>
+    </div>
+    
+    <div class="account-input">
+      <label for="account-number">To</label>
+      <input type="text" id="account-number" placeholder="Name, Account Number, Phone, Email">
+      <div class="account-name" id="account-name"></div>
+    </div>
+    
+    <div class="note-input">
+      <label for="note">For</label>
+      <input type="text" id="note" placeholder="Add a note">
+    </div>
+    
+    <div class="send-options">
+      <div class="send-label">Send as</div>
+      <div class="send-types">
+        <button class="send-type-btn active">Cash</button>
+        <button class="send-type-btn">Gift Card</button>
+      </div>
+    </div>
+    
+    <div class="suggested-section">
+      <div class="suggested-label">SUGGESTED</div>
+      
+      <div class="suggested-contacts">
+        <div class="contact-item" data-account="1234567890">
+          <div class="contact-avatar" style="background-color: #e67e22;">K</div>
+          <div class="contact-info">
+            <div class="contact-name">Kellen Bates</div>
+            <div class="contact-detail">Account•7890</div>
+          </div>
+        </div>
+        
+        <div class="contact-item" data-account="2345678901">
+          <div class="contact-avatar" style="background-color: #c0392b;">K</div>
+          <div class="contact-info">
+            <div class="contact-name">Kate Howard</div>
+            <div class="contact-detail">Account•8901</div>
+          </div>
+        </div>
+        
+        <div class="contact-item" data-account="3456789012">
+          <div class="contact-avatar" style="background-color: #16a085;">J</div>
+          <div class="contact-info">
+            <div class="contact-name">Julia Wilson</div>
+            <div class="contact-detail">Account•9012</div>
+          </div>
+        </div>
+        
+        <div class="contact-item" data-account="4567890123">
+          <div class="contact-avatar" style="background-color: #8e44ad;">M</div>
+          <div class="contact-info">
+            <div class="contact-name">Michael Johnson</div>
+            <div class="contact-detail">Account•0123</div>
+          </div>
+        </div>
+        
+        <div class="contact-item" data-account="5678901234">
+          <div class="contact-avatar" style="background-color: #2980b9;">S</div>
+          <div class="contact-info">
+            <div class="contact-name">Sarah Parker</div>
+            <div class="contact-detail">Account•1234</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <button class="transfer-action" id="send-btn" disabled>Send</button>
+  </div>
+
+  <script src="/js/recipient.js"></script>
+</body>
+</html>

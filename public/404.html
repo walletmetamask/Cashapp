@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Banking App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/404.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="not-found">
+    <h1>404</h1>
+    <p>Adding funds is carried out by admin only.<br>Please contact admin for more information.</p>
+    <button class="btn" id="back-to-dashboard">Back to Dashboard</button>
+  </div>
+
+  <script>
+    document.getElementById('back-to-dashboard').addEventListener('click', () => {
+      window.location.href = '/dashboard.html';
+    });
+  </script>
+</body>
+</html>

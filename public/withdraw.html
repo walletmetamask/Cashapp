@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Withdraw - Banking App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/withdraw.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="withdraw-container">
+    <div class="withdraw-header">
+      <button class="back-btn" id="back-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2 class="withdraw-title">Money</h2>
+    </div>
+    
+    <div class="balance-info">
+      <div class="balance-label">Cash Balance</div>
+      <div class="balance-amount" id="balance-amount">$0.00</div>
+      <div class="account-link">Account & Routing <i class="fas fa-chevron-right"></i></div>
+    </div>
+    
+    <div class="withdraw-panel">
+      <div class="withdraw-label">Cash Out</div>
+      <div class="withdraw-available" id="withdraw-available">$0.00 AVAILABLE</div>
+      
+      <div class="withdraw-amount" id="withdraw-amount">$0.00</div>
+      
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="100" class="slider" id="amount-slider">
+      </div>
+      
+      <button class="withdraw-btn" id="withdraw-btn">Cash Out</button>
+    </div>
+  </div>
+
+  <script src="/js/withdraw.js"></script>
+</body>
+</html>
